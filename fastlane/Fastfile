@@ -1,0 +1,9 @@
+  desc "Create ipa"
+  lane :build do
+    # 1
+    enable_automatic_code_signing
+    # 2
+    increment_build_number
+    # 3
+    gym
+  end
