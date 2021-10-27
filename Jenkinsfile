@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'build success'
         sh 'bundle update --bundler'
-         sh 'bundle install fastlane'
+         sh 'bundle install'
         sh 'bundle exec fastlane build'
       }
     }
